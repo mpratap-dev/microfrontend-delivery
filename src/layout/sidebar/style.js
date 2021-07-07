@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
     whiteSpace: 'nowrap',
-    paddingLeft: 10,
-    paddingTop: 15
+    paddingTop: 15,
+    zIndex: 1
   },
   drawerOpen: {
     width: drawerWidth,
@@ -28,14 +28,15 @@ const useStyles = makeStyles((theme) => ({
     overflowX: 'hidden',
     width: theme.spacing(7) + 1,
     [theme.breakpoints.up('sm')]: {
-      width: theme.spacing(7) + 1,
+      width: theme.spacing(9) + 1,
     },
   },
   paper: {
     position: 'relative',
     height: 'calc(100vh - 79px)',
     backgroundColor: theme.palette.primary.main,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    paddingLeft: 10,
   },
   listItem: {
     color: '#fff',
