@@ -11,7 +11,7 @@ import {
 import { getHubs, fetchRegionDetail } from "../../../api/delivery";
 import useSpacing from "../../../hooks/useSpacing";
 import LinkButton from "../../common/link-button";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import UseColumns from "./hubListingColumns";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import If from "../../common/if";

@@ -153,7 +153,7 @@ Example usage:
 ```js
 import React, { useEffect, useState } from "react";
 import { getClients } from "../../../api/api/deliveryApi";
-import AsyncTable from "../../common/Table/AsyncTable";
+import AsyncTable from "../../common/table";
 import UseColumns from "./clientListingColumns";
 
 const Listing = () => {

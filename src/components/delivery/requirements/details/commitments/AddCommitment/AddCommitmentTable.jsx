@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AsyncTable from "../../../../../common/table/AsyncTable";
+import AsyncTable from "../../../../../common/table";
 import UseColumns from "./addCommitmentColumns";
 import { addCommitments, commitmentSearch } from "../../../../../../api/delivery";
 import Snackbar from "@material-ui/core/Snackbar";

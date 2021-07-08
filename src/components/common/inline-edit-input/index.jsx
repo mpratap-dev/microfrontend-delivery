@@ -6,7 +6,7 @@ import { Button } from "@material-ui/core";
 import useSpacing from "../../../hooks/useSpacing";
 import CheckIcon from "@material-ui/icons/Check";
 import ClearIcon from "@material-ui/icons/Clear";
-import If from "../if";
+import If from "@oyerickshaw/common.ui.if";
 import EditIcon from "@material-ui/icons/Edit";
 
 const useStyles = makeStyles((theme) => ({

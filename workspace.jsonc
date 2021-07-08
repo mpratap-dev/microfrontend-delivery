@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "admin-panel",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -37,9 +37,19 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@oyerickshaw/common.ui.empty": "1.0.0",
+        "@oyerickshaw/common.utils.theme": "1.0.1"
+      },
       "peerDependencies": {}
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": ""
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your

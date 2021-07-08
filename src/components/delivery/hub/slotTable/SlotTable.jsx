@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getSlots, changeSlotStatus } from "../../../../api/delivery";
 import useSpacing from "../../../../hooks/useSpacing";
 import If from "../../../common/if";
-import AsyncTable from "../../../common/table/AsyncTable";
+import AsyncTable from "../../../common/table";
 import UseColumns from "./slotColumns";
 import Message from "../../../common/message";
 import { SLOT_STATE } from "../../../../constant/delivery";

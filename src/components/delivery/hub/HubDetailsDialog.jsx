@@ -8,7 +8,7 @@ import {
   Tabs,
   Typography,
 } from "@material-ui/core";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import contactColumns from "./contactColumns";
 import useSpacing from "../../../hooks/useSpacing";
 import SlotTable from "./slotTable/SlotTable";

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
 import { getRateCard } from "../../../api/delivery";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import UseColumns from "./rateCardColumns";
 import useSpacing from "../../../hooks/useSpacing";
 import If from "../../common/if";

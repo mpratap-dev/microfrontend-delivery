@@ -5,7 +5,7 @@ import Popover from "@material-ui/core/Popover";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import useSpacing from "../../../hooks/useSpacing";
-import If from "../if";
+import If from "@oyerickshaw/common.ui.if";
 import { IconButton } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({

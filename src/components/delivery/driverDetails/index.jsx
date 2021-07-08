@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getDriverListing, uploadDriverDetails } from "../../../api/delivery";
 import useSpacing from "../../../hooks/useSpacing";
 import If from "../../common/if";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import ClientFilters from "./DriverDetailsFilters";
 import UseColumns from "./DriverDetailsListingColumns";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";

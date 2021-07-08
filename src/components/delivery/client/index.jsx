@@ -2,7 +2,7 @@ import { Box, Divider, Grid, Paper, Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { getClients } from "../../../api/delivery";
 import If from "../../common/if";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import ClientFilters from "./ClientFilters";
 import UseColumns from "./clientListingColumns";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";

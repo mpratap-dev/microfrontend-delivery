@@ -1,7 +1,7 @@
 import { Box, Divider, Grid, Paper, Typography } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import UseColumns from "./uploadedFilesColumns";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import { getFilesList } from "../../../api/delivery";
 import useSpacing from "../../../hooks/useSpacing";
 import TextField from "@material-ui/core/TextField";

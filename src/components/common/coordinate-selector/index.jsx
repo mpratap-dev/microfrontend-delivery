@@ -1,7 +1,7 @@
 import { Paper } from "@material-ui/core";
 import React, { useEffect, useState, lazy } from "react";
 import Typography from "@material-ui/core/Typography";
-import If from "../if";
+import If from "@oyerickshaw/common.ui.if";
 
 const MapComponent = lazy(() => import("./MapComponent"));
 

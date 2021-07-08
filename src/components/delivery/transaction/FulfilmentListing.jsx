@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AsyncTable from "../../common/table/AsyncTable";
+import AsyncTable from "../../common/table";
 import UseColumns from "./fulfilmentColumns";
 import { Box, Divider, Grid, Paper, Typography } from "@material-ui/core";
 import useSpacing from "../../../hooks/useSpacing";

@@ -13,6 +13,19 @@ module.exports = (webpackConfigEnv, argv) => {
   return merge(defaultConfig, {
     plugins: [new Dotenv()],
     externals: ["single-spa", "react", "react-dom", "@material-ui/core"],
+    module: {
+      rules: [
+        {
+          test: /.jsx?$/,
+          use: [{ loader: "babel-loader" }],
+          exclude: /node_modules/,
+        },
+        {
+          test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+          use: [{ loader: "url-loader?limit=100000" }],
+        },
+      ],
+    },
     // modify the webpack config however you'd like to by adding to this object
   });
 };

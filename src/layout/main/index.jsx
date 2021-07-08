@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import Route from "../../routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -17,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Main = (params) => {
+const Main = ({ Route }) => {
   const classes = useStyles();
 
   return (
