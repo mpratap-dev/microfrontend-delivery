@@ -1,72 +1,72 @@
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   hide: {
-    display: 'none',
+    display: "none",
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    whiteSpace: 'nowrap',
+    whiteSpace: "nowrap",
     paddingTop: 15,
-    zIndex: 1
+    zIndex: 1,
   },
   drawerOpen: {
     width: drawerWidth,
-    transition: theme.transitions.create('width', {
+    transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
   drawerClose: {
-    transition: theme.transitions.create('width', {
+    transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    overflowX: 'hidden',
+    overflowX: "hidden",
     width: theme.spacing(7) + 1,
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: theme.spacing(9) + 1,
     },
   },
   paper: {
-    position: 'relative',
-    height: 'calc(100vh - 79px)',
+    position: "relative",
+    height: "calc(100vh - 79px)",
     backgroundColor: theme.palette.primary.main,
-    overflow: 'hidden',
+    overflow: "hidden",
     paddingLeft: 10,
   },
   listItem: {
-    color: '#fff',
+    color: "#fff",
   },
   bold: {
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
   navLinks: {
     opacity: 0.5,
-    display: 'block',
-    textDecoration: 'none',
+    display: "block",
+    textDecoration: "none",
 
-    '&.selected': {
+    "&.selected": {
       opacity: 1,
-      background: '#fff',
-      borderRadius: '25px 0 0 25px',
+      background: "#f5f5f5",
+      borderRadius: "25px 0 0 25px",
 
-      '& $listItem': {
-        color: theme.palette.primary.main
-      }
+      "& $listItem": {
+        color: theme.palette.primary.main,
+      },
     },
   },
   hamburger: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 0,
     paddingLeft: 0,
     paddingRight: 0,
     marginLeft: -15,
-    width: 'calc(100% + 15px)'
-  }
+    width: "calc(100% + 15px)",
+  },
 }));
 
 export default useStyles;
