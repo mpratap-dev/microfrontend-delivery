@@ -92,7 +92,6 @@ const Rows = ({
         </If>
         {columns.map(
           ({ key, dataIndex, render, width, align = "left" }, index) => {
-            console.log(`${key}_${row[rowKey]}_${index}`);
             return (
               <TableCell
                 style={{ width: width || "" }}
