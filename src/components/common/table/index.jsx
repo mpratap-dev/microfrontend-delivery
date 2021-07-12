@@ -4,16 +4,16 @@ import If from "@oyerickshaw/common.ui.if";
 import AsyncPagination from "./AsyncPagination";
 import SearchIcon from "@material-ui/icons/Search";
 import { debounce } from "lodash";
-import { 
-  Box, 
-  Checkbox, 
-  Divider, 
-  Typography, 
-  CircularProgress, 
-  Backdrop, 
-  Grid, 
-  Popover, 
-  TextField, 
+import {
+  Box,
+  Checkbox,
+  Divider,
+  Typography,
+  CircularProgress,
+  Backdrop,
+  Grid,
+  Popover,
+  TextField,
   TableSortLabel,
   Paper,
   TableRow,
