@@ -10,9 +10,13 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
   });
 
+  const { standalone } = webpackConfigEnv;
+
   return merge(defaultConfig, {
     plugins: [new Dotenv()],
-    externals: ["single-spa", "react", "react-dom", "@material-ui/core"],
+    externals: standalone
+      ? []
+      : ["single-spa", "react", "react-dom", "@material-ui/core"],
     module: {
       rules: [
         {
